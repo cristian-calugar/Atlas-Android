@@ -60,6 +60,13 @@ public abstract class AttachmentSender extends MessageSender {
     }
 
     /**
+     * Override to handle results from onRequestPermissionsResult.
+     */
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        // Optional override
+    }
+
+    /**
      * Returns the title for this AttachmentSender, typically for use in the AtlasMessageComposer
      * attachment menu.
      *
